@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'matte-red': '#1B1A55'
+        'matte-red': '#211951'
       },
       animation: {
         'appear-from-left': 'appear-from-left 2s ease-in-out forwards',
@@ -16,8 +16,8 @@ export default {
       keyframes: {
         'appear-from-left': {
           '0%': { transform: 'translateX(0%)' },
-          '50%': { transform: 'translateX(35%)' },
-          '100%': { transform: 'translateX(35%)'}
+          '50%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(100%)'}
         },
       }
     },

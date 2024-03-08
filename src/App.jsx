@@ -5,7 +5,13 @@ import olliglorioso_pic from './assets/olliglorioso_pic.png'
 function App() {
 
   const [vertical, setVertical] = useState(0)
-  let [nameHeader, setHeaderAnimation] = useState('font-extrabold leading-none tracking-tight text-matte-red text-[100px] sticky left-0 top-0')
+  let [nameHeader, setHeaderAnimation] = useState(`
+    font-extrabold 
+    text-matte-red 
+    text-[15vh]
+    sticky
+    left-20
+    top-0`)
 
   window.onscroll = function(e) {
     const doc = document.documentElement
@@ -21,13 +27,11 @@ function App() {
   }, [vertical])
 
   return (
-    <div className='h-[1000rem]'>
-      <h1 
-        className={nameHeader}>
+    <div className='h-[250rem]'>
+      <h1 className={`${nameHeader}`}>
           Olli Glorioso
       </h1>
       {/* <img className="w-20 h-20 rounded-full" src={olliglorioso_pic}></img> */}
-      {/**/}
       
     </div>
     
